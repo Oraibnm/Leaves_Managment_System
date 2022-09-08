@@ -36,21 +36,24 @@ if(isset($_POST['email']) && isset($_POST['password'])){
       <link rel="stylesheet" href="assets/css/style.css">
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
    </head>
-   <body class="bg-dark">
+   <body class="bg-light">
       <div class="sufee-login d-flex align-content-center flex-wrap">
          <div class="container">
+            
             <div class="login-content">
                <div class="login-form mt-150">
+               <h5 class="text-center">Employee Leave Managment System </h5>
+               <br>
                   <form method="post">
                      <div class="form-group">
-                        <label>Email address</label>
+                        <label>Email</label>
                         <input type="email" name="email" class="form-control" placeholder="Email" required>
                      </div>
                      <div class="form-group">
                         <label>Password</label>
                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                      </div>
-                     <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+                     <button type="submit" class="btn btn-danger ">Sign in</button>
 					 <div class="result_msg"><?php echo $msg?></div>
 					</form>
                </div>

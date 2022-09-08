@@ -2,7 +2,7 @@
 require('db.inc.php');
 if(!isset($_SESSION['ROLE'])){
 	header('location:login.php');
-	die();
+	exit();
 }
 ?>
 <!doctype html>
@@ -22,6 +22,9 @@ if(!isset($_SESSION['ROLE'])){
       <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+      <link rel="icon" type="image/png" href="./images/logEmp-removebg-preview.png">
+
    </head>
    <body>
       <aside id="left-panel" class="left-panel">
@@ -56,7 +59,7 @@ if(!isset($_SESSION['ROLE'])){
             <div class="top-left">
                <div class="navbar-header">
                   <a class="navbar-brand" href="index.php"><img src="images/logEmp-removebg-preview.png" height="100" width="100" alt="Logo"></a>
-                  <!-- <a class="navbar-brand hidden" href="index.php"><img src="images/logo2.png" alt="Logo"></a> -->
+
                   <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                </div>
             </div>
@@ -65,7 +68,8 @@ if(!isset($_SESSION['ROLE'])){
                   <div class="user-area dropdown float-right">
                      <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Welcome </a>
                      <div class="user-menu dropdown-menu">
-                        <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i>Logout</a>
+                        <a class="nav-link" href="logout.php">
+                           <i class="fa fa-power-off"></i>Logout</a>
                      </div>
                     
                   </div>

@@ -24,10 +24,12 @@ if(isset($_POST['department'])){
 	die();
 }
 ?>
+<br>
+<br>
 <div class="content pb-0">
             <div class="animated fadeIn">
                <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-lg-8">
                      <div class="card">
                         <div class="card-header"><strong>Department</strong><small> Form</small></div>
                         <div class="card-body card-block">
@@ -36,7 +38,7 @@ if(isset($_POST['department'])){
 								<label for="department" class=" form-control-label">Department Name</label>
 								<input type="text" value="<?php echo $department?>" name="department" placeholder="Enter your department name" class="form-control" required></div>
 							   
-							   <button  type="submit" class="btn btn-lg btn-info btn-block">
+							   <button  type="submit" class="btn btn-lg btn-primary btn-block">
 							   <span id="payment-button-amount">Submit</span>
 							   </button>
 							  </form>

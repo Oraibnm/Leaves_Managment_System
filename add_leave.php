@@ -10,13 +10,15 @@ if(isset($_POST['submit'])){
 	$sql="insert into `leave`(leave_id,leave_from,leave_to,employee_id,leave_description,leave_status) values('$leave_id','$leave_from','$leave_to','$employee_id','$leave_description',1)";
 	mysqli_query($con,$sql);
 	header('location:leave.php');
-	die();
+	exit();
 }
 ?>
+<br>
+<br>
 <div class="content pb-0">
             <div class="animated fadeIn">
                <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-lg-8">
                      <div class="card">
                         <div class="card-header"><strong>Leave Type</strong><small> Form</small></div>
                         <div class="card-body card-block">
@@ -47,7 +49,7 @@ if(isset($_POST['submit'])){
 									<input type="text" name="leave_description" class="form-control" >
 								</div>
 								
-								 <button  type="submit" name="submit" class="btn btn-lg btn-info btn-block">
+								 <button  type="submit" name="submit" class="btn btn-lg btn-primary btn-block">
 							   <span id="payment-button-amount">Submit</span>
 							   </button>
 							  </form>

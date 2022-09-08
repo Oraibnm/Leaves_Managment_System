@@ -1,7 +1,7 @@
 <?php
 require('top.inc.php');
 if($_SESSION['ROLE']!=1){
-	header('location:add_employee.php?id='.$_SESSION['USER_ID']);
+	header('location:add_employee.php?id='.$_SESSION['USER_NAME']);
 	die();
 }
 if(isset($_GET['type']) && $_GET['type']=='delete' && isset($_GET['id'])){
@@ -11,6 +11,8 @@ if(isset($_GET['type']) && $_GET['type']=='delete' && isset($_GET['id'])){
 }
 $res=mysqli_query($con,"select * from employee where role=2 order by id desc");
 ?>
+<br>
+<br>
 <div class="content pb-0">
             <div class="orders">
                <div class="row">

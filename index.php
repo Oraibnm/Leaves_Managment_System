@@ -10,13 +10,15 @@ if(isset($_GET['type']) && $_GET['type']=='delete' && isset($_GET['id'])){
 }
 $res=mysqli_query($con,"select * from department order by id desc");
 ?>
+<br>
+<br>
 <div class="content pb-0">
             <div class="orders">
                <div class="row">
                   <div class="col-xl-12">
                      <div class="card">
                         <div class="card-body">
-                           <h4 class="box-title">Department Master </h4>
+                           <h4 class="box-title">Department </h4>
 						   <h4 class="box_title_link"><a href="add_department.php">Add Department</a> </h4>
                         </div>
                         <div class="card-body--">

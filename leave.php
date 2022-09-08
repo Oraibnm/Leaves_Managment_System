@@ -18,6 +18,8 @@ if($_SESSION['ROLE']==1){
 }
 $res=mysqli_query($con,$sql);
 ?>
+<br>
+<br>
 <div class="content pb-0">
             <div class="orders">
                <div class="row">
@@ -66,10 +68,10 @@ $res=mysqli_query($con,$sql);
 											}
 										   ?>
 										   <?php if($_SESSION['ROLE']==1){ ?>
-										   <select class="form-control" onchange="update_leave_status('<?php echo $row['id']?>',this.options[this.selectedIndex].value)">
-											<option value="">Update Status</option>
-											<option value="2">Approved</option>
-											<option value="3">Rejected</option>
+										   <select  class="form-select flat-color-6 " onchange="update_leave_status('<?php echo $row['id']?>',this.options[this.selectedIndex].value)">
+											<option value="" >Update Status</option>
+											<option value="2" class="flat-color-5">Approved</option>
+											<option value="3"class="color-red">Rejected</option>
 										   </select>
 										   <?php } ?>
 									   </td>

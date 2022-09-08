@@ -35,12 +35,15 @@ if(isset($_POST['submit'])){
 	die();
 }
 ?>
-<div class="content pb-0">
+<br>
+<br>
+
+<div class="content">
             <div class="animated fadeIn">
-               <div class="row">
-                  <div class="col-lg-12">
+               <div class="row center">
+                  <div class="col-lg-8">
                      <div class="card">
-                        <div class="card-header"><strong>Leave Type</strong><small> Form</small></div>
+                        <div class="card-header"><strong>Profile</strong></div>
                         <div class="card-body card-block">
                            <form method="post">
 							   <div class="form-group">
@@ -78,7 +81,7 @@ if(isset($_POST['submit'])){
 								</div>
 								
 							   <?php if($_SESSION['ROLE']==1){?>
-							   <button  type="submit" name="submit" class="btn btn-lg btn-info btn-block">
+							   <button  type="submit" name="submit" class="btn btn-lg btn-primary btn-block">
 							   <span id="payment-button-amount">Submit</span>
 							   </button>
 							   <?php } ?>

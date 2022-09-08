@@ -10,6 +10,8 @@ if(isset($_GET['type']) && $_GET['type']=='delete' && isset($_GET['id'])){
 }
 $res=mysqli_query($con,"select * from leave_type order by id desc");
 ?>
+<br>
+<br>
 <div class="content pb-0">
             <div class="orders">
                <div class="row">
@@ -26,8 +28,8 @@ $res=mysqli_query($con,"select * from leave_type order by id desc");
                                     <tr>
                                        <th width="5%">S.No</th>
                                        <th width="5%">ID</th>
-                                       <th width="70%">Leave Type</th>
-                                       <th width="20%"></th>
+                                       <th width="50%">Leave Type</th>
+                                       <th width="40%" class="text-center"></th>
                                     </tr>
                                  </thead>
                                  <tbody>

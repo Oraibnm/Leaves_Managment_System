@@ -24,10 +24,12 @@ if(isset($_POST['leave_type'])){
 	die();
 }
 ?>
+<br>
+<br>
 <div class="content pb-0">
             <div class="animated fadeIn">
                <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-lg-8">
                      <div class="card">
                         <div class="card-header"><strong>Leave Type</strong><small> Form</small></div>
                         <div class="card-body card-block">
@@ -36,7 +38,7 @@ if(isset($_POST['leave_type'])){
 								<label for="leave_type" class=" form-control-label">Leave Type</label>
 								<input type="text" value="<?php echo $leave_type?>" name="leave_type" placeholder="Enter your leave type" class="form-control" required></div>
 							   
-							   <button  type="submit" class="btn btn-lg btn-info btn-block">
+							   <button  type="submit" class="btn btn-lg btn-primary btn-block">
 							   <span id="payment-button-amount">Submit</span>
 							   </button>
 							  </form>
